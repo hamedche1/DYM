@@ -102,9 +102,9 @@ export default function Home() {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 8453) {
-      window.alert("Change the network to Base Mainet");
-      throw new Error("Change network to Base Mainet");
+    if (chainId !== 5045380) {
+      window.alert("Change the network to MYdymension");
+      throw new Error("Change network to MYdymension");
     }
 
     if (needSigner) {
